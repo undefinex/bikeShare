@@ -170,17 +170,21 @@ def user_stats(df):
 
 def main():
     while True:
+        """Main program loop"""
+
         city, month, day = get_filters()
 
         print("{}, {}, {}".format(city, month, day))
         df = load_data(city, month, day)
         print("Load data success")
 
+        # Display varies stats of the travel 
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
 
+        # Run again if enter 'yes' otherwise quit
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
