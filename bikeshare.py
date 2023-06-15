@@ -2,12 +2,15 @@ import time
 import pandas as pd
 import numpy as np
 
+# City data file to load
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+# Months filter selection
 MONTHS = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
 
+# Days filter selection
 DAYS = ['all','monday','tuesday','wednesday','thursday','friday','saturday','sunday']
 
 
