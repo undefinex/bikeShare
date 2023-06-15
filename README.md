@@ -14,4 +14,7 @@ Analyze the travel statistics of chicago, new york and washington
 
 ### Credits
 Udacity
+stackoverflow
 
+### Future Improvements
+Visualization graphs
